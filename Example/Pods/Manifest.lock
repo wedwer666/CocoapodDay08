@@ -1,0 +1,16 @@
+PODS:
+  - mmitriuc2017 (0.1.0)
+
+DEPENDENCIES:
+  - mmitriuc2017 (from `../`)
+
+EXTERNAL SOURCES:
+  mmitriuc2017:
+    :path: ../
+
+SPEC CHECKSUMS:
+  mmitriuc2017: a3497206236bd7ca2cc04b75a31088a8f28fe8b6
+
+PODFILE CHECKSUM: c3dfa1086282f76f574a768255b6e28a3eb67fc0
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,6 @@
+framework module mmitriuc2017 {
+  umbrella header "mmitriuc2017-umbrella.h"
+
+  export *
+  module * { export * }
+}

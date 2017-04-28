@@ -1,0 +1,22 @@
+{
+  "name": "mmitriuc2017",
+  "version": "0.1.0",
+  "summary": "A short description of mmitriuc2017.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wedwer666/mmitriuc2017",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wedwer666": "mitriucmaria@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/wedwer666/mmitriuc2017.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "mmitriuc2017/Classes/**/*"
+}
