@@ -104,7 +104,7 @@ public class ArticleManager
     public init()
     {
         bundle = Bundle(for: Article.self)
-        let url = bundle.url(forResource: "article", withExtension: "momd")!
+        let url = bundle.url(forResource: "Model", withExtension: "momd")!
         mom = NSManagedObjectModel(contentsOf: url)!
         let psc = NSPersistentStoreCoordinator(managedObjectModel: mom)
         managedObjectContext = NSManagedObjectContext(concurrencyType:.mainQueueConcurrencyType)
@@ -112,7 +112,7 @@ public class ArticleManager
         
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let docURL = urls[urls.endIndex-1]
-        let storeURL = docURL.appendingPathComponent("article.xcdatamodeld")
+        let storeURL = docURL.appendingPathComponent("Model.xcdatamodeld")
         do {
             try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
         } catch {
@@ -125,13 +125,15 @@ public class ArticleManager
     {
         let entity = NSEntityDescription.entity(forEntityName: "Article", in: managedObjectContext)
         let article = NSManagedObject(entity: entity!,insertInto: managedObjectContext)
+        //let art = Article()
         
-        article.setValue(title, forKey: "title")
-        article.setValue(content, forKey: "content")
-        article.setValue(lang, forKey: "lang")
-        article.setValue(image, forKey: "image")
-        article.setValue(atCreate, forKey: "atCreate")
-        article.setValue(atModefied, forKey: "atModefied")
+        
+        article.setValue(title, forKey: "title") //art.title
+        article.setValue(content, forKey: "content") //art.content
+        article.setValue(lang, forKey: "tongue") //art.tongue
+        article.setValue(image, forKey: "picture") //art.picture
+        article.setValue(atCreate, forKey: "creation_date") //art.creation_date
+        article.setValue(atModefied, forKey: "change_date") //art.change_date
         
         return article as! Article
     }

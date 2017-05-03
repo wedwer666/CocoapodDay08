@@ -1,9 +1,9 @@
 {
   "name": "mmitriuc2017",
   "version": "0.1.0",
-  "summary": "A short description of mmitriuc2017.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/wedwer666/mmitriuc2017",
+  "summary": "This is my second cocoapod done for Ecole 42 school",
+  "description": "This is my second cocoapod done for Ecole 42 school. It was done during 2 weeks of traing in Piscine Swift",
+  "homepage": "https://github.com/wedwer666/CocoapodDay08.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "wedwer666": "mitriucmaria@gmail.com"
   },
   "source": {
-    "git": "https://github.com/wedwer666/mmitriuc2017.git",
+    "git": "https://github.com/wedwer666/CocoapodDay08.git",
     "tag": "0.1.0"
   },
   "platforms": {

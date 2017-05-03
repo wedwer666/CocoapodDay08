@@ -24,7 +24,7 @@ extension Article {
     @NSManaged public var content: String?
     
     override public var description: String {
-        return customDescription()
+        return "Test"
     }
 
 }

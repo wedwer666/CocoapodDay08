@@ -29,13 +29,13 @@ This is my second cocoapod done for Ecole 42 school. It was done during 2 weeks 
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'mmitriuc2017/Classes/**/*'
+  s.source_files = 'mmitriuc2017/Classes/**/*.swift'
   
-  # s.resource_bundles = {
-  #   'mmitriuc2017' => ['mmitriuc2017/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'mmitriuc2017' => ['mmitriuc2017/Classes/**/*.xcdatamodeld']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'CoreData'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
