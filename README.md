@@ -22,7 +22,7 @@ pod "mmitriuc2017"
 
 ## Author
 
-wedwer666, mitriucmaria@gmail.com
+wedwer666, 
 
 ## License
 
